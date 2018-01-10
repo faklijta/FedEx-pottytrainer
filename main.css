@@ -12,15 +12,15 @@
 	from {transform: translate(-50%, -50%) rotate(-5deg);}
 	to {transform: translate(-50%, -50%) rotate(5deg);}
 }
-
 #map {
 	margin-left: 225px;
-	width: 900px;
+	width: 70%;
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
 	background-image: url('assets/map.jpg');
 	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 
 .toilet{
@@ -61,15 +61,16 @@
 
 #ship {
 	position: absolute;
+	left: -225px;
 	width: 50px;
 	height: 50px;
-	max-width: 10vw;
-	max-height: 10vw;
+	/* max-width: 10vw;
+	max-height: 10vw; */
 	background-image: url('assets/ship.png');
 	background-size: 100% 100%;
 	transition: all 1s;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
+    /* transform: translate(-50%, -50%); */
+    /* pointer-events: none; */
     animation: choochoo 0.5s ease-in-out 0s infinite alternate;
 }
 

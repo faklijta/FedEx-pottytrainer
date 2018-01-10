@@ -51,6 +51,7 @@ function formatTime(time){
     return minutes + ":" + seconds;
 };
 
+
 let s = {
 
 	init: function() {
