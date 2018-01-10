@@ -2,7 +2,7 @@ h1,h2 {
   font-family: 'Joti One', cursive;
   width: 100%;
   flex-wrap: wrap;
-  
+
 }
 .scroll {
   display: flex;
