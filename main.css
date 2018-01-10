@@ -1,0 +1,35 @@
+#map {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-image: url('assets/map.jpg');
+	background-size: 100% 100%;
+}
+
+.star {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	max-width: 10vw;
+	max-height: 10vw;
+	background-image: url('assets/star.png');
+	background-size: 100% 100%;
+	opacity: 0.4;
+    transform: translate(-50%, -50%) scale(0.7);
+    filter: grayscale(100%);
+}
+
+.surprise {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	max-width: 10vw;
+	max-height: 10vw;
+	background-image: url('assets/surprise.png');
+	background-size: 100% 100%;
+	opacity: 0.8;
+    transform: translate(-50%, -50%) scale(0.7);
+    filter: grayscale(100%);
+}
