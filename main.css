@@ -1,4 +1,16 @@
-body {
+@keyframes wiggle {
+	from {transform: translate(-50%, -50%) rotate(-15deg);}
+	to {transform: translate(-50%, -50%) rotate(15deg);}
+}
+
+@keyframes choochoo {
+	from {transform: translate(-50%, -50%)}
+	to {transform: translate(-50%, -60%)}
+}
+
+@keyframes littlewiggle {
+	from {transform: translate(-50%, -50%) rotate(-5deg);}
+	to {transform: translate(-50%, -50%) rotate(5deg);}
 }
 
 #map {
@@ -20,6 +32,7 @@ body {
 	background-image: url('assets/toilet.png');
 	background-size: 100% 100%;
 }
+
 .star {
 	position: absolute;
 	width: 100px;
@@ -34,17 +47,9 @@ body {
 }
 
 .surprise {
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	max-width: 10vw;
-	max-height: 10vw;
 	background-image: url('assets/surprise.png');
-	background-size: 100% 100%;
-	opacity: 0.8;
-    transform: translate(-50%, -50%) scale(0.7);
-    filter: grayscale(100%);
 }
+
 .ready {
 	width: 100px;
 	height: 100px;
@@ -53,6 +58,7 @@ body {
 	background-image: url('assets/toilet.png');
 	background-size: 100% 100%;
 }
+
 #ship {
 	position: absolute;
 	width: 50px;
@@ -65,4 +71,16 @@ body {
     transform: translate(-50%, -50%);
     pointer-events: none;
     animation: choochoo 0.5s ease-in-out 0s infinite alternate;
+}
+
+.star:hover {
+	transition: all 0.5s;
+	animation: wiggle 0.5s ease-in-out 0s infinite alternate;
+}
+
+.selected {
+	opacity: 0.9;
+    transform: translate(-50%, -50%) scale(1.0);
+    animation: littlewiggle 0.5s ease-in-out 0s infinite alternate;
+    filter: grayscale(0%);
 }
