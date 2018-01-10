@@ -1,12 +1,12 @@
 'use strict!'
-var config = 'https://www.googleapis.com/youtube/v3/search?channelId=UCQXr3evmYzQZ435UUxEWeKg&key=AIzaSyCcGHW1aj_8BRTLe8CHeMhLprnSamzx7Oo&part=snippet'
+
+var config = 'https://www.googleapis.com/youtube/v3/search?channelId=UCQXr3evmYzQZ435UUxEWeKg&key=AIzaSyCcGHW1aj_8BRTLe8CHeMhLprnSamzx7Oo&part=snippet,id&order=date&maxResults=20'
 
 function doRequest(callback) {
     var x = new XMLHttpRequest();
     x.open('GET', config)
     x.onload = function() {
         callback(JSON.parse(x.responseText))
-        // console.log("It works!");
     };
     x.send();
 }

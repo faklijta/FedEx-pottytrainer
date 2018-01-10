@@ -45,3 +45,11 @@ body {
     transform: translate(-50%, -50%) scale(0.7);
     filter: grayscale(100%);
 }
+.ready {
+	width: 100px;
+	height: 100px;
+	max-width: 10vw;
+	max-height: 10vw;
+	background-image: url('assets/toilet.png');
+	background-size: 100% 100%;
+}
