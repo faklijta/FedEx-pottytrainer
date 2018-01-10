@@ -1,6 +1,6 @@
 'use strict!'
 
-var config = 'https://www.googleapis.com/youtube/v3/search?channelId=UCQXr3evmYzQZ435UUxEWeKg&key=AIzaSyCcGHW1aj_8BRTLe8CHeMhLprnSamzx7Oo&part=snippet,id&order=date&maxResults=20'
+var config = 'https://www.googleapis.com/youtube/v3/search?channelId=UCQXr3evmYzQZ435UUxEWeKg&key=AIzaSyCcGHW1aj_8BRTLe8CHeMhLprnSamzx7Oo&part=snippet,id&order=date&maxResults=8'
 
 function doRequest(callback) {
     var x = new XMLHttpRequest();
