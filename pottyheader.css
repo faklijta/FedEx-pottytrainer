@@ -1,0 +1,15 @@
+h1,h2 {
+  font-family: 'Joti One', cursive;
+  width: 100%;
+  flex-wrap: wrap;
+  
+}
+.scroll {
+  display: flex;
+  background-image: url("assets/scroll.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 400px;
+  height: 220px;
+}
