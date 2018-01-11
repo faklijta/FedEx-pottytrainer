@@ -12,6 +12,24 @@
 	from {transform: translate(-50%, -50%) rotate(-5deg);}
 	to {transform: translate(-50%, -50%) rotate(5deg);}
 }
+
+body {
+	background-image: url('assets/wooden-bg.jpg');
+	background-size: cover;
+}
+
+h1 {
+	width: 100%;
+	padding-left: 630px;
+	padding-bottom: 30px;
+	font-family: 'Joti One', cursive;
+	font-size: 3rem;
+}
+
+.header {
+	padding-top: 10px;
+}
+
 #map {
 	width: 100%;
 	position: absolute;
@@ -50,12 +68,12 @@
 }
 
 .ready {
-	width: 100px;
-	height: 100px;
-	max-width: 10vw;
-	max-height: 10vw;
-	background-image: url('assets/toilet.png');
-	background-size: 100% 100%;
+	width: 180px;
+	height: 110px;
+	background-image: url('assets/back-button.png');
+	background-size: cover;
+	margin-right: 0px;
+	float: left;
 }
 
 #ship {
@@ -78,4 +96,9 @@
     transform: translate(-50%, -50%) scale(1.0);
     animation: littlewiggle 0.5s ease-in-out 0s infinite alternate;
     filter: grayscale(0%);
+}
+
+.video-container {
+	margin: 0 auto;
+	width: 85.2%;
 }
